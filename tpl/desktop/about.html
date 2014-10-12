@@ -1,0 +1,62 @@
+<div id="about">
+	<div class="head">
+		<div class="title">{{about}}</div>
+		<a href="#index"><div class="close"></div></a>
+	</div>
+    <div id="renard">
+        <div class="logo"></div>
+        <div class="titl">
+            {{Renard}} <span class="color">{{Blanc}}<span>
+        </div>
+    </div>
+	<div class="content">
+	    <div class="left-row">
+			<div class="about">
+				<div class="title">{{about-title}}</div>
+				<div class="text">{{about-text}}</div>
+			</div>
+			<div class="team">
+				<div class="anri">
+					<div class="pic"></div>
+					<div class="nam">{{anri-name}}</div>
+					<div class="pro">{{anri-special}}</div>
+				</div>
+				<div class="alex">
+					<div class="pic"></div>
+					<div class="nam">{{sandro-name}}</div>
+					<div class="pro">{{sandro-special}}</div>
+				</div>
+				<div class="givi">
+					<div class="pic"></div>
+					<div class="nam">{{givi-name}}</div>
+					<div class="pro">{{givi-special}}</div>
+				</div>
+				<div class="niak">
+					<div class="pic"></div>
+					<div class="nam">{{nia-name}}</div>
+					<div class="pro">{{nia-special}}</div>
+				</div>
+			</div>
+	    </div>
+	    <div class="right-row">
+	    	<div class="title"></div>
+		    <div id="timeline"></div>
+	    </div>
+	</div>
+</div>
+
+<!-- BEGIN TimelineJS -->
+
+<script src="./js/lib/timeline.min.js"></script>
+<script>
+    $(document).ready(function() {
+        createStoryJS({
+            type:       'timeline',
+            width:      '800',
+            height:     '600',
+            source:     'http://timeline.knightlab.com/static/welcome/welcome.json',
+            embed_id:   'timeline'
+        });
+    });
+</script>
+<!-- END TimelineJS -->

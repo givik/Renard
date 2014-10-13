@@ -51,8 +51,8 @@ if(!h.js.match("/")){
 	h.css=c.css+h.type+".css?"+u;
 	h.js=c.js+h.type;
 	h.debug ? h.js+=".js?"+u : h.js+="-min.js?"+u;
-	h.js = "./js/lib/timeline.js";
-	console.log(h.js);
+	// path for local timeline.js
+	//h.js = "./js/lib/timeline.js";
 	h.id="storyjs-"+h.type
 	
 	//h.debug = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js";

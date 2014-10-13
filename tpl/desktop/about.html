@@ -66,17 +66,16 @@
 		src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js">
 </script>
 < END TimelineJS -->
-
-<script type="text/javascript" src="./js/lib/timeline.js"></script>
 <script type="text/javascript" src="./js/lib/storyjs-embed.js"></script>
-
 <script type="text/javascript">
   var timeline_config = {
-      width:              '100%',
-      height:             '600',
-      source:             'welcome.json',
-      embed_id:           'timeline',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
-      maptype:            'toner',                   //OPTIONAL MAP STYLE
+	width:              '100%',
+	height:             '600',
+	source:             'welcome.json',
+	embed_id:           'timeline',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+	maptype:            'toner',                   //OPTIONAL MAP STYLE
+	css:                'css/timeline.css',     //OPTIONAL PATH TO CSS
+	js:                 'js/lib/timeline.min.js'    //OPTIONAL PATH TO JS
   }
   $(document).ready(function() {
     createStoryJS(timeline_config);

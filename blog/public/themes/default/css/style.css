@@ -1,0 +1,122 @@
+
+/* fonts */
+@font-face {
+    font-family: Museo100;
+    src: url(../fonts/Museo100-Regular.otf);
+}
+
+@font-face {
+    font-family: Museo300;
+    src: url(../fonts/Museo300-Regular.otf);
+}
+
+@font-face {
+    font-family: Museo500;
+    src: url(../fonts/Museo500-Regular.otf);
+}
+
+@font-face {
+    font-family: Museo700;
+    src: url(../fonts/Museo700-Regular.otf);
+}
+
+@font-face {
+    font-family: Museo900;
+    src: url(../fonts/Museo900-Regular.otf);
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    overflow-x: hidden;
+    outline: none;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browser {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+a { color: #000; }
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}
+
+body {
+  font-family: Museo100;
+}
+.pagination { margin-bottom: 50px; margin-top: -54px; float: right; }
+.pagination li {
+  padding: 5px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Museo100;
+  font-size: 20px;
+}
+
+.pagination .active {
+  background: black;
+  color: white;
+  font-family: Museo300;
+  font-size: 18px;
+}
+
+/*** CUSTOM STYLES ***/
+#main { width: 1000px; margin-left: auto; margin-right: auto; }
+#main .head .logo { width: 133px; height: 200px; background: url(../img/renard-black.png); float: left; background-repeat: no-repeat; background-position: 0% 70%; }
+#main .head .blog { width: 517px; margin-left: 100px; padding-left: 200px; float: left; height: 159px; line-height: 159px; font-size:100px; border-bottom: 1px solid #000; letter-spacing: 5px; }
+#main .cont .text { top: 210px; position: absolute; margin-left: auto; margin-right: auto; width: 900px; left: 0; right: 0; }
+#main .cont .text .post { margin-bottom: 80px; }
+#main .cont .text .post h1 { font-family: Museo300; font-size: 30px; text-align: right; font-weight: normal; }
+#main .cont .text .post h1 a { color: white; background: red; padding:4px; padding-left: 10px; }
+#main .cont .text .post .date { font-size: 40px; text-align: right; float: left; margin-top:-70px; position: absolute; color: #656565; }
+#main .cont .text .post .content { font-size: 20px; text-align: right; }
+#main .cont .more { font-size: 20px; text-align: center; background: red; line-height: 30px; width: 150px; height: 30px; color: white; display: inline-block; }
+#main .foot { position: absolute; bottom: 0; background: red; height: 100px; width: 100px; }

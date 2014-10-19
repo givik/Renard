@@ -675,27 +675,8 @@ img { border:1px solid red; }
     right: 0px;
     color: #333333;
 }
-
-
-
-/************************| Blog |************************/
-
-#blog {
-    position: absolute;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0px;
-    right: 0px;
-    color: #333333;
-}
-
-
-
-
-
-
-
+#portfolio .content .menu { background: red; width: 500px; height: 40px; margin-left: auto; margin-right: auto; margin-top: 150px; font-size: 24px; font-family: Museo100; }
+#portfolio .content .menu div { float: left; width: 100px; text-align: center; }
 
 /* HEAD & TITLE */
 .head .title {

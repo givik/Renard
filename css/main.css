@@ -79,22 +79,18 @@ a:hover {text-decoration: underline; }
 
 .red-h::-webkit-input-placeholder {
     color: red;
-    font-weight: bold;
 }
 .red-h:-moz-placeholder {
     /* FF 4-18 */
     color: red;
-    font-weight: bold;
 }
 .red-h::-moz-placeholder {
     /* FF 19+ */
     color: red;
-    font-weight: bold;
 }
 .red-h:-ms-input-placeholder {
     /* IE 10+ */
     color: red;
-    font-weight: bold;
 }
 
 /* ==========================================================================

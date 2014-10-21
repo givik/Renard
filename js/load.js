@@ -9,10 +9,8 @@ function onReady(callback) {
 }
 
 onReady(function () {
-
+	
 	$('body').css('display', 'block');
-	$('#wings').css({'opacity' : '0'});
-	$('#social').css({'opacity' :'0'});
 
 	var ind = 0;
 

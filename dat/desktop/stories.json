@@ -1,0 +1,71 @@
+{
+    "timeline":
+    {
+        "headline":"Our Stories",
+        "type":"default",
+        "text":"<p>Click Next button to see our stories' timeline</p>",
+        "asset": {
+            "media":"",
+            "credit":"",
+            "caption":""
+        },
+        "date": [
+            {
+                "startDate":"2012,03,28",
+                "endDate":"2012,03,28",
+                "headline":"Microsoft / Imagine Cup Georgia",
+                "text":"<p>2nd place</p>",
+                "tag":"imaginecup",
+                "classname":"imaginecup-class",
+                "asset": {
+                    "media":"./challenges/imaginecup/1.jpg",
+                    "thumbnail":"./challenges/imaginecup/1.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,07,03",
+                "endDate":"2012,04,03",
+                "headline":"Ministry of Sports & ITIncubator / StartApp",
+                "text":"<p>Creative Solution</p>",
+                "tag":"startapp",
+                "classname":"startapp-class",
+                "asset": {
+                    "media":"./challenges/startapp/4.jpg",
+                    "thumbnail":"./challenges/startapp/4.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,06,15",
+                "endDate":"2013,06,15",
+                "headline":"Ministry of Economy & GDG Tbilisi / EcaHack",
+                "text":"<p>1st place</p>",
+                "tag":"ecahack",
+                "classname":"ecahack-class",
+                "asset": {
+                    "media":"./challenges/ecahack/1.jpg",
+                    "thumbnail":"./challenges/ecahack/1.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2014,06,10",
+                "endDate":"2014,06,10",
+                "headline":"Garage 48 & UNDP / DiploHack",
+                "text":"<p>1st place</p>",
+                "tag":"diplohack",
+                "classname":"diplohack-class",
+                "asset": {
+                    "media":"./challenges/diplohack/4.jpg",
+                    "thumbnail":"./challenges/diplohack/4.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            }
+        ]
+    }
+}

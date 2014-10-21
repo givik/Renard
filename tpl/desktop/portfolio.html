@@ -12,10 +12,62 @@
 			<div class="all">{{all}}</div>
 		</div-->
 		<div class="port">
-			<div class="pdf" onclick="window.open('full.pdf', '_blank');">
+			<div class="pdf" onclick="window.open('full.pdf', '_blank')">
 				<div class="icon"></div>
 				<div class="text">Download as PDF</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+
+	// registering custom effect
+	$.cssEase['bounce'] = 'cubic-bezier(0,1,0.5,1.3)';
+
+	// toogle hover effect
+	$('.pdf').on({
+	    'mouseenter':function(){
+			$(this).find(".icon").transition({
+				rotate: '180deg'
+			}, 300, 'bounce');
+	    },'mouseleave':function(){
+			$(this).find(".icon").transition({
+				rotate: '0deg'
+			}, 300, 'bounce');
+	    }
+	});
+
+// $(".pdf").click(function() {
+		
+// 	// Find the right method, call on correct element
+// 	function launchIntoFullscreen(element) {
+// 	  if(element.requestFullscreen) {
+// 	    element.requestFullscreen();
+// 	  } else if(element.mozRequestFullScreen) {
+// 	    element.mozRequestFullScreen();
+// 	  } else if(element.webkitRequestFullscreen) {
+// 	    element.webkitRequestFullscreen();
+// 	  } else if(element.msRequestFullscreen) {
+// 	    element.msRequestFullscreen();
+// 	  }
+// 	}
+
+// 	// Whack fullscreen
+// 	function exitFullscreen() {
+// 	  if(document.exitFullscreen) {
+// 	    document.exitFullscreen();
+// 	  } else if(document.mozCancelFullScreen) {
+// 	    document.mozCancelFullScreen();
+// 	  } else if(document.webkitExitFullscreen) {
+// 	    document.webkitExitFullscreen();
+// 	  }
+// 	}
+
+// 	// Launch fullscreen for browsers that support it!
+// 	launchIntoFullscreen(document.getElementById('thumb'));
+
+	
+// });
+
+</script>

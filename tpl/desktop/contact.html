@@ -15,6 +15,9 @@
 </div>
 
 <script>
+	// remove spell checking from text fields 
+	$("input[type='text'], textarea").attr('spellcheck',false);
+	// on submit
 	$(".send").click(function() {
 
 		var success = true; 
@@ -41,7 +44,7 @@
 	    }
 
 	    if(success){
-	    	$("input:text, textarea").attr('disabled', 'disabled').css({'color': '#999999', 'cursor' : 'default' });
+	    	$("input:text, textarea").attr('disabled', 'disabled').css({'cursor' : 'default', 'font-family' : 'Museo700', 'color': '#999999' });
 	    	$("#mail").addClass('red-holder');
 			$(".send").fadeOut(900, function(){ this.html('') });
 			$( ".overlay" ).animate({

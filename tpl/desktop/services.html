@@ -36,3 +36,26 @@
 		</div>
 	</div>
 </div>
+
+
+<script>
+
+	// registering custom effect
+	$.cssEase['bounce'] = 'cubic-bezier(0,1,0.5,1.3)';
+
+	// toogle hover effect
+	$('.services div').on({
+	    'mouseenter':function(){
+			$(this).find(".icon").transition({
+				y: '-16px',
+				opacity: '0.9'
+			}, 300, 'bounce');
+	    },'mouseleave':function(){
+			$(this).find(".icon").transition({
+				y: '0px',
+				opacity: '1'
+			}, 300, 'bounce');
+	    }
+	});
+
+</script>

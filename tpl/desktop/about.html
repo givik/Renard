@@ -71,12 +71,12 @@
   var timeline_config = {
 	width:              '100%',
 	height:             '500',
-	source:             'welcome.json',
+	source:             './dat/desktop/timeline.json',
 	start_zoom_adjust: 	'3',
 	embed_id:           'timeline',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
 	maptype:            'toner',                   //OPTIONAL MAP STYLE
-	css:                'css/timeline.css',     //OPTIONAL PATH TO CSS
-	js:                 'js/lib/timeline.min.js'    //OPTIONAL PATH TO JS
+	css:                './css/timeline.css',     //OPTIONAL PATH TO CSS
+	js:                 './js/lib/timeline.min.js'    //OPTIONAL PATH TO JS
   }
   $(document).ready(function() {
     createStoryJS(timeline_config);

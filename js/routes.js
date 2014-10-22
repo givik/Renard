@@ -2,10 +2,10 @@ $(document).ready(function(){
     // Routing
     Path.map("#index").to(function(){
         $.ajax({
-            url: '/renard/dat/desktop/main.json',
+            url: 'dat/desktop/main.json',
             dataType: "json",
             success: function(data) {
-                $.get('/renard/tpl/desktop/main.html', function(template) {
+                $.get('./tpl/desktop/main.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }
@@ -16,7 +16,7 @@ $(document).ready(function(){
             url: './dat/desktop/blog.json',
             dataType: "json",
             success: function(data) {
-                $.get('tpl/desktop/blog.html', function(template) {
+                $.get('./tpl/desktop/blog.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }
@@ -27,7 +27,7 @@ $(document).ready(function(){
             url: './dat/desktop/about.json',
             dataType: "json",
             success: function(data) {
-                $.get('tpl/desktop/about.html', function(template) {
+                $.get('./tpl/desktop/about.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }
@@ -38,7 +38,7 @@ $(document).ready(function(){
             url: './dat/desktop/portfolio.json',
             dataType: "json",
             success: function(data) {
-                $.get('tpl/desktop/portfolio.html', function(template) {
+                $.get('./tpl/desktop/portfolio.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }
@@ -49,7 +49,7 @@ $(document).ready(function(){
             url: './dat/desktop/services.json',
             dataType: "json",
             success: function(data) {
-                $.get('tpl/desktop/services.html', function(template) {
+                $.get('./tpl/desktop/services.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }
@@ -60,7 +60,7 @@ $(document).ready(function(){
             url: './dat/desktop/contact.json',
             dataType: "json",
             success: function(data) {
-                $.get('tpl/desktop/contact.html', function(template) {
+                $.get('./tpl/desktop/contact.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }
@@ -73,10 +73,10 @@ $(document).ready(function(){
     // If index page
     if(!Path.routes.current){
         $.ajax({
-            url: '/renard/dat/desktop/main.json',
+            url: './dat/desktop/main.json',
             dataType: "json",
             success: function(data) {
-                $.get('/renard/tpl/desktop/main.html', function(template) {
+                $.get('./tpl/desktop/main.html', function(template) {
                     $('#main').html(Mustache.render(template, data));
                 });
             }

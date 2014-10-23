@@ -267,6 +267,7 @@ img { border:1px solid red; }
 }
 #wings .wing-left-top {
     position: absolute;
+    z-index: 1;
     left: 0;
     top: 12px;
     width: 405px;

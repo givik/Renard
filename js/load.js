@@ -9,7 +9,7 @@ $( window ).ready(function() {
 			$('#wings').fadeOut(0);
 			$('#social').fadeOut(0)
 	
-		}, 1000);
+		}, 500);
 		
 			
 		// registering custom effect
@@ -58,9 +58,11 @@ $( window ).ready(function() {
 			});
 	*/
 	
-			$('#wings').fadeIn(100);
-			$('#social').fadeIn(100);
-			
+			$('#wings').fadeIn(500);
+			setTimeout(function(){
+				$('#social').fadeIn(1000);
+			}, 500);
+			/*
 			// TOP
 			$('.wing-top').transition({ y: '-=6', duration: 0 });
 			$('.wing-top').transition({ y: '+=6', duration: 2000 });
@@ -80,7 +82,7 @@ $( window ).ready(function() {
 			// RIGHT BOTTOM
 			$('.wing-right-bottom').transition({ x: '+=10', rotate: '+=2deg', duration: 0 });
 			$('.wing-right-bottom').transition({ x: '-=10', rotate: '-=2deg', duration: 2000 });
-			
+			*/
 	
 		}, 1000);
 	});
